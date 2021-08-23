@@ -1,4 +1,4 @@
-#Exercício 1 de paradigmas de programação 
+# Exercício 1 de paradigmas de programação 
 
 Soma de dois números
 
