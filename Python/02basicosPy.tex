@@ -1,0 +1,181 @@
+% Prof. Dr. Ausberto S. Castro Vera
+% UENF - CCT - LCMAT - Curso de Ci\^{e}ncia da Computa\c{c}\~{a}o
+% Campos, RJ,  2021
+% Disciplina: Paradigmas de Linguagens de Programa\c{c}\~{a}o
+% Aluno:
+
+
+\chapter{ Conceitos b\'{a}sicos da Linguagem Python}
+
+Os livros b\'{a}sicos para o estudo da Linguagem Python s\~{a}o: \cite{Summerfield2013}, \cite{Guttag2015}, \cite{Perkovic2016}
+
+Neste cap\'{\i}tulo \'{e} apresentado ....
+
+Segundo \cite{seb11}, a linguagem Python,  . . .
+
+De acordo com \cite{seb11} e \cite{roy04}, a linguagem Python . . .
+
+\cite{seb11} afirma que a linguagem Python . . .
+
+Considerando que a linguagem Python (\cite{seb11}, \cite{wat90}) \'{e} considerada como ....
+
+    %%%%%%%%=================================
+    \section{Vari\'{a}veis e constantes}
+    %%%%%%%%=================================
+
+
+    %%%%%%%%=================================
+    \section{Tipos de Dados B\'{a}sicos}
+    %%%%%%%%=================================
+
+     %%%........................
+            \subsection{String}
+     %%%........................
+            Um string \'{e} uma sequ\^{e}ncia de caracteres considerado como um item de dado simples. Para Python, um string \'{e} um array de caracteres ou qualquer grupo de caracteres escritos entre doble aspas ou aspas simples. Por exemplo,
+    \begin{lstlisting}
+    >>> #usando aspas simples
+    >>> pyStr1 = 'Brasil'
+    >>> print (pyStr1)  Brasil
+    >>> #usando aspas duplas
+    >>> pyStr2 = "Oi, tudo bem?"
+    >>> print (pyStr2)
+    Oi, tudo bem?
+    \end{lstlisting}
+
+    \begin{itemize}
+      \item \textit{Concatena\c{c}\~{a}o de strings}\\
+            Strings podem ser concatenadas utilizando o operador +, e o seu comprimento pode ser calculado utilizado o operador \texttt{len(string)}
+     \begin{lstlisting}
+    >>> # concatenando 2 strings
+    >>> pyStr = "Brasil" + " verde amarelo"
+    >>> print (pyStr)
+    Brasil verde amarelo
+    >>> print (len(pyStr))
+    20
+    \end{lstlisting}
+
+      \item \textit{Operador de indexa\c{c}\~{a}o}\\
+      Qualquer caracter de um string o sequ\^{e}ncia de caracteres pode ser obtido utilizando o operador de indexa\c{c}\~{a}o []. Existem duas formas de indexar em Python, os caracteres de um string:\\
+      \begin{description}
+        \item[Index com inteiros positivos] indexando a partir da esquerda come\c{c}ando com 0 e  onde 0 \'{e} o index do primeiro caracter da sequ\^{e}ncia
+        \item[Index com inteiros negativos] indexando a partir da direita come\c{c}ando com -1, e onde -1 \'{e} o \'{u}ltimo elemento da sequ\^{e}ncia, -2 \'{e} o pen\'{u}ltimo elemento da sequ\^{e}ncia, e assim sucessivamente.
+      \end{description}
+
+     \begin{lstlisting}
+    >>> # Indexando strings
+    >>> pyStr = "Programando"
+    >>> print (len(pyStr))
+    11
+    >>> print (pyStr)
+    Brasil verde amarelo
+        \end{lstlisting}
+
+
+
+
+      \item \textit{Operador de Fatias}\\
+      O operador de acesso a itens (caracteres individuais) tamb\'{e}m pode ser utilizado como operador de fatias, para extrair uma fatia inteira (subsequ\^{e}ncia) de caracteres de um string. O operador de Fatias possui tr\^{e}s sintaxes:\\
+      \texttt{seq[ inicio ]}\\
+      \texttt{seq[ inicio : fim ]} \\
+      \texttt{seq[ in\'{\i}cio : fim : step ]}\\
+      onde \texttt{in\'{\i}cio, fim} e \texttt{step} s\~{a}o n\'{u}meros inteiros.
+     \begin{lstlisting}
+    >>> # Indexando strings
+    >>> pyStr = "Programando Python"
+    >>> print (len(pyStr))
+    11
+    >>> print (pyStr)
+    Brasil verde amarelo
+        \end{lstlisting}
+
+    \end{itemize}
+
+
+
+     %%%%%%%%=================================
+    \section{Tipos de Dados de Cole\c{c}\~{a}o}
+    %%%%%%%%=================================
+
+
+     %%%........................
+            \subsection{Tipos Sequenciais}
+     %%%........................
+
+
+     %%%........................
+            \subsection{Tipos Conjunto}
+     %%%........................
+
+
+     %%%........................
+            \subsection{Tipos Mapeamento}
+     %%%........................
+
+
+
+
+    %%%%%%%%=================================
+    \section{Estrutura de Controle e Fun\c{c}\~{o}es}
+    %%%%%%%%=================================
+
+     %%%........................
+            \subsection{O comando IF}
+     %%%........................
+
+
+      %%%........................
+            \subsection{La\c{c}o FOR}
+     %%%........................
+
+     %%%........................
+            \subsection{La\c{c}o WHILE}
+     %%%........................
+
+
+    %%%%%%%%======================
+    \section{M\'{o}dulos e pacotes}
+    %%%%%%%%======================
+
+
+
+       %%%........................
+            \subsection{M\'{o}dulos}
+     %%%........................
+
+
+
+          %%%........................
+            \subsection{Pacotes}
+     %%%........................
+
+
+
+
+
+
+    C\'{o}digo fonte para a linguagem Python:
+    \begin{lstlisting}
+    number_1 = int(input('Ingresse o primeiro numero: '))
+    number_2 = int(input('Ingresse o segundo numero: '))
+
+    # Soma
+    print('{} + {} = '.format(number_1, number_2))
+    print(number_1 + number_2)
+
+    # Substra\c{c}\~{a}o
+    print('{} - {} = '.format(number_1, number_2))
+    print(number_1 - number_2)
+
+    # Multiplica\c{c}\~{a}o
+    print('{} * {} = '.format(number_1, number_2))
+    print(number_1 * number_2)
+
+    # Divis\~{a}o
+    print('{} / {} = '.format(number_1, number_2))
+    print(number_1 / number_2)
+    \end{lstlisting}
+
+
+
+
+
