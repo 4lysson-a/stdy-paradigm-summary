@@ -7,57 +7,82 @@
 
 
 \chapter{ Introdu\c{c}\~{a}o}
-Concebido originalmente no final dos anos 80 \cite{Int01}, por por Guido van Rossum no Centrum Wiskunde & Informatica (CWI) na Holanda, veio como sucessor da linguagem ABC, a implementação se deu inicio em dezembro de 1989 \cite{Int02}. Python foi lançado como sendo uma linguagem de propósito geral de alto nível, multiparadigma, suportando paradigmas orientados a objetos, imperativos, funcionais e procedurais, com uma tipagem dinâmica e de fácil leitura com a característica de exigir poucas linhas se comparado a outras linguagens, por conta disso Python é tido como uma das linguagens mais populares da atualidade, considerado a terceira linguagem "mais amada" de acordo com uma pesquisa conduzida pelo site do \href{https://stackoverflow.com/}{Stack Overflow} em 2018 \cite{Int03} e está entre as 5 linguagens mais populares, de acordo com uma pesquisa conduzida pela RedMonk \cite{Int04}
+Concebido originalmente no final dos anos 80, por por Guido van Rossum no Centrum Wiskunde \& Informatica (CWI) na Holanda, veio como sucessor da linguagem ABC, a implementação se deu inicio em dezembro de 1989. Python foi lançado como sendo uma linguagem de propósito geral de alto nível, multiparadigma, suportando paradigmas orientados a objetos, imperativos, funcionais e procedurais, com uma tipagem dinâmica e de fácil leitura, característica por exigir poucas linhas se comparado a outras linguagens, por conta disso Python é tido como uma das linguagens mais populares da atualidade, considerado a terceira linguagem "mais amada" de acordo com uma pesquisa conduzida pelo site do \href{https://stackoverflow.com/}{Stack Overflow} em 2018 e está entre as 5 linguagens mais populares, de acordo com uma pesquisa conduzida pela RedMonk 
+
+O nome Python teve a sua origem no grupo humorístico britânico Monty Python,[8] criador do programa Monty Python's Flying Circus, embora muitas pessoas façam associação com o réptil do mesmo nome (em português, píton ou pitão).
 
 \begin{quote}
-  Python, uma linguagem de script de c\'{o}digo aberto, se tornou a linguagem de ensino introdut\'{o}ria mais popular nas principais universidades americanas - entre elas, Georgia Tech - segundo uma pesquisa recente de Philip Guo, professor assistente de ci\^{e}ncia da computa\c{c}\~{a}o na Universidade de Rochester. Guo decidiu conduzir a pesquisa depois de notar, nos \'{u}ltimos anos, que o Python estava substituindo linguagens como Java como a introdu\c{c}\~{a}o de fato \`{a} classe de programa\c{c}\~{a}o em mais e mais aulas de ci\^{e}ncia da computa\c{c}\~{a}o em universidades de todo o pa\'{\i}s. \cite{Shein2015}
+  Em fevereiro de 1991, Van Rossum publicou o código (rotulado como versão 0.9.0) no grupo de discussão da alt.sources. Nessa versão já estavam presentes classes com herança, tratamento de exceções, funções e os tipos de dado nativos \textcolor{purple}{list}, \textcolor{purple}{dict}, \textcolor{purple}{str}, e assim por diante. Também estava presente nessa versão um sistema de módulos emprestado do Modula-3. O modelo de exceções também lembrava muito o do Modula-3, com a adição da opção \textcolor{purple}{else clause}.
+  Em 1994 foi formado o principal fórum de discussão do Python, comp.lang.python, um marco para o crescimento da base de usuários da linguagem. \cite{Int01}
 \end{quote}
 
 
    \section{Aspectos hist\'{o}ricos da linguagem Python}
-
-A hist\'{o}ria da maioria de linguagens de programa\c{c}\~{a}o n\~{a}o tem uma data fixa, nem um autor \'{u}nico. A sua evolu\c{c}\~{a}o inclui muitos personagens, muitas institui\c{c}\~{o}es e muitas vers\~{o}es.
-
-A seguir, menciona-se alguns aspectos hist\'{o}ricos da linguagem Python, baseados em\cite{Perkovic2016}, \cite{Severance2015} :
-\begin{itemize}
-  \item O autor principal foi o holand\^{e}s Guido van Rossum, quando trabalhava no CWI ( Centrum Wiskunde \& Informatica), em Amsterd\~{a}, Holanda.
-  \item  A linguagem n\~{a}o recebeu esse nome por causada esp\'{e}cie de serpente, mas sim do seriado de com\'{e}dia da BBC \textit{Monty Python's Flying Circus} da qual Rossum \'{e} um f\~{a}.
-  \item Python 0.9.0 foi lan\c{c}ado em 1991.  Esta vers\~{a}o incluia manipula\c{c}\~{a}o de exce\c{c}\~{o}es, classes, listas e strings. Tamb\'{e}m foram incl\'{\i}dos alguns aspectos de programa\c{c}\~{a}o funcional: lambda, maps flitros e reduce.
-
-  \item
-  \item  Em 1995, Guido continuou se trabalho sobre Python na Corporation for National Research Initiatives (CNRI) em Reston, Virginia, USA.
-  \item Python 1.6 foi lan\c{c}ado no CNRI em
-  \item  No ano 2000, Guido e a equipe de desenvolvimento principal do Python foram para BeOpen.com para formar a equipe BeOpen PythonLabs.
-  \item Python 2.0 foi lan\c{c}ado no ano 2000
-  \item Python 3.o foi lan\c{c}ado em dezembro de 2008  \item
-  \item
-\end{itemize}
-
-Algumas linguagens s\~{a}o consideradas  tradicionais (como mostrado na Fig.\ref{ling1}) e outras s\~{a}o consideradas modernas (ver Fig.\ref{ling2}). Devemos observar aqui, que a inclus\~{a}o de qualquer figura, significa que ela deve ser referenciada em algum lugar do texto
-   \begin{figure}[H]
+        
+        Python chegou a versão 1.0 em janeiro de 1994. As principais novas funcionalidades incluídas nesta versão foram as ferramentas de programação funcional lambda, map, filtere reduce. Van Rossum afirmou que "Python adquiriu lambda, reduz (), filtro () e mapa (), cortesia de um hacker Lisp que os perdeu e enviou patches de trabalho ". \cite{Int02}
+        A última versão lançada enquanto Van Rossum estava no CWI foi o Python 1.2. Em 1995, Van Rossum continuou seu trabalho em Python na Corporation for National Research Initiatives (CNRI) em Reston , Virgínia , de onde lançou várias versões. Abaixo pode-se ver a evolução das logos do Python
+        
+    \begin{figure}[H]
     \begin{center}
-        \caption{Logos da Linguagem Python} \label{ling1}
-        \includegraphics[width=12cm]{Python01.png} \\
-        {\tiny \sf Fonte: O autor deste trabalho }
+        \caption{Primeira logo da linguagem Python (1990s–2006)} \label{ling1}
+        \includegraphics[width=12cm]{Pictures/primeira-logo-python.png} \\
+        {\tiny \sf Fonte: \href{https://commons.wikimedia.org/wiki/File:Python_logo_1990s.svg}{domínio público} }
     \end{center}
    \end{figure}
+   
 
-Algumas figuras s\~{a}o criadas o elaboradas pelo mesmo autor, neste caso, deve-se escrever como fonte "O autor", "Os autores", etc. Figuras que incluam imagens de outras fontes deve-se especificar claramente, indicando o link o referencia correspondente, por exemplo, uma imagem que aparece em \cite[p. 93]{Sprankle2012}, \'{e} mostrada na Fig.\ref{afp} e a fonte deve ser indicada na parte inferior da figura.
    \begin{figure}[H]
     \begin{center}
-        \caption{Algoritmo, Diagrama de fluxo, e Pseudo-c\'{o}digo} \label{afp}
-        \includegraphics[width=10cm]{afp.jpg} \\
-        {\tiny \sf Fonte: \cite[p. 93]{Sprankle2012} }
+        \caption{Logo atual da linguagem python (2006 - atual)} \label{ling1}
+        \includegraphics[width=5cm]{python-logo.png} \\
+        {\tiny \sf Fonte: \href{https://www.python.org/community/logos/}{community logo python} }
     \end{center}
    \end{figure}
 
    \section{\'{A}reas de Aplica\c{c}\~{a}o da Linguagem}
-   Esta linguagem \'{e} utilizada e aplicada nas seguintes \'{a}reas: !!!!! As aqui mostradas s\~{a}o exemplos!!!
+   
+   Por ter uma sintaxe simples e ser baseado em c, Python é uma linguagem que pode ser facilmente escalável e usada em diversas áreas diferentes.
+   
+   Python pode servir como uma linguagem de script para aplicativos da web, por exemplo, via \textcolor{purple}{mod\_wsgi} para o servidor da web \textcolor{purple}{Apache} Com a Web Server \textcolor{purple}{Gateway Interface}, uma API padrão evoluiu para facilitar essas aplicações. Frameworks da Web como \textcolor{purple}{Django}, \textcolor{purple}{Pylons}, \textcolor{purple}{Pyramid}, \textcolor{purple}{TurboGears}, \textcolor{purple}{web2py}, \textcolor{purple}{Tornado}, \textcolor{purple}{Flask}, \textcolor{purple}{Bottle} e \textcolor{purple}{Zope} apoiam os desenvolvedores no design e manutenção de aplicações complexas. \textcolor{purple}{Pyjs} e \textcolor{purple}{IronPythonpode} ser usado para desenvolver o lado do cliente de aplicativos baseados em \textcolor{purple}{Ajax}. \textcolor{purple}{SQLAlchemy} pode ser usado como um mapeador de dados para um banco de dados relacional. \textcolor{purple}{Twisted}  é um framework para programar comunicações entre computadores e é usado (por exemplo) pelo \textcolor{purple}{Dropbox} \cite{Int03}
 
         \subsection{ Big Data}
-        Fazer uma breve descri\c{c}\~{a}o. Pelo menos 3 par\'{a}grafos mencionando exemplos
-
+        Python, possui bibliotecas voltada diretamente Big Data, como a Scikit-learn, que oferece funcionalidades para o pré-processamento, a classificação e a clusterização dos dados, a seleção de modelos e a aplicação de algoritmos de regressão.
+        Das várias bibliotecas que o python possui para realizar cálculo de Big Data podemos citar a \textcolor{purple}{Imbalanced-learn}, \textcolor{purple}{Jupyter}, \textcolor{purple}{Pandas} e \textcolor{purple}{Scikit-learn} 
+        
+        \begin{table}[]
+        \begin{tabular}{ll}
+        \textbf{Biblioteca} & \textbf{Utilização}                                \\
+                            &                                                    \\
+        Imbalaced-learn     & Balanceamento do conjunto de desenvolvimento       \\
+        Jupyter             & Desenvolvimento dos scripts em linguagem Python    \\
+        Pandas              & Leitura do arquivo de dados                        \\
+                            & Manipulação da estrutura de dados DataFrame        \\
+        Scikit-learn        & Separação dos conjuntos de treinamento e teste     \\
+                            & Normalização dos valores                           \\
+                            & Ajustes do modelo de regressão logística           \\
+                            & Predição do valores a partir dos modelos ajustados \\
+                            & Cálculo da acurácia das predições                  \\
+                            & Geração das matrizes de confusão                  
+        \end{tabular}
+        \caption{Utilização das bibliotecas da linguagem Python}
+        \label{tab:my-table}
+        \end{table}
+        
+        No artigo de Ivan Eduardo o mesmo realiza uma série de aplicações de Big Data utilizando cada uma das bibliotecas, na tabela a seguir estão listadas as aplicações \cite{Int04}
+        
         \subsection{ Orienta\c{c}\~{a}o a objetos}
-        Fazer uma breve descri\c{c}\~{a}o. Pelo menos 3 par\'{a}grafos mencionando exemplos
+        \cite{Int05} A programação orientada a objetos ( OOP ) é um paradigma de programação baseado no conceito de " objetos ", que podem conter dados e código: dados na forma de campos (geralmente conhecidos como atributos ou propriedades ), e código, na forma de procedimentos (freqüentemente conhecido como métodos ).
+        
+        Em Python, todo valor é na verdade um objeto. Seja uma tartaruga, uma lista, ou mesmo um inteiro, todos são objetos. Programas manipulam esses objetos realizando computações diretamente com eles ou chamando os seus métodos (ou seja, pedindo que esses objetos executem seus métodos). Para ser mais específico, nós dizemos que um objeto possui um estado e uma coleção de métodos que ele pode executar. O estado de um objeto representa as coisas que o objeto sabe sobre si mesmo. Por exemplo, como vimos com os objetos tartaruga, cada tartaruga possui um estado que representa a sua posição, sua cor, sua direção, etc. Cada tartaruga também tem a capacidade de se mover para a frente, para trás, ou virar para a direita ou esquerda. Cada tartaruga é diferente pois, embora sejam todas tartarugas, cada uma tem um estado diferente (como posições diferentes, ou orientações, etc).
+        
+        Sabendo como eles funcionam podemos ver um exemplo prático na linguagem python criando um objeto ponto que possui o eixo x e o eixo y
+        
+    \begin{figure}[H]
+    \begin{center}
+        \caption{Código de OOP em python, criando um ponto com dois eixos} \label{ling1}
+        \includegraphics[width=12cm]{Pictures/poo-python.png} \\
+        {\tiny \sf Fonte: Autor }
+    \end{center}
+   \end{figure}        
 
-        \subsection{ outras} 
+        \subsection{ Data Science }
