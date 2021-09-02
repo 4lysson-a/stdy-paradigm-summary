@@ -1,1 +1,3 @@
-Racket é uma linguagem de programação multiparadigma que suporta programação funcional e procedural. Pertence a família de linguagens Scheme/Lisp. Um dos objetivos do projeto é servir como uma plataforma para a criação de linguagem, design e implementação
+Racket é uma linguagem de programação multiparadigma que suporta programação funcional e procedural. 
+Pertence a família de linguagens Scheme/Lisp. 
+Um dos objetivos do projeto é servir como uma plataforma para a criação de linguagem, design e implementação
