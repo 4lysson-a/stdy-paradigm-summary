@@ -4,13 +4,12 @@
   <img width="300px" style="margin-bottom: 100px" src="./assets/racket-logo.svg">
 </div>
 
-<p style="line-height: 35px; margin-bottom: 20px; font-weight: 600; color: blue" size="2">
-  A linguagem de programação Racket e o ambiente DrRacket são utilizados em diversos cursos introdutórios de programação. O uso de uma linguagem funcional facilita
+  ## A linguagem de programação Racket e o ambiente DrRacket são utilizados em diversos cursos introdutórios de programação.
+  O uso de uma linguagem funcional facilita
   a exposição de certos conceitos, tais como recursão estrutural, reuso de código através
   de composição de funções e rotinas genéricas através do uso de funções de alta ordem.
   Além disso, o ambiente de desenvolvimento interativo propiciado pelo DrRacket facilita
   a criação, experimentação e teste de programas
-</p>
 
 <p style="line-height: 35px; margin-bottom: 20px; font-weight: 600; color: red" size="2">
   Por outro lado, devido ao fato de Racket ser uma linguagem dinamicamente tipada,
