@@ -1,8 +1,8 @@
 # O que é Racket ?
 
-<center>
+<div align="center">
   <img style="margin-bottom: 60px" src="./assets/racket-logo.svg">
-</center>
+</div>
 
 <p style="line-height: 35px; margin-bottom: 20px; font-weight: 600; color: blue" size="2">
   A linguagem de programação Racket e o ambiente DrRacket são utilizados em diversos cursos introdutórios de programação. O uso de uma linguagem funcional facilita
