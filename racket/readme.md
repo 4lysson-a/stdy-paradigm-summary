@@ -1,7 +1,7 @@
 # O que é Racket ?
 
 <div align="center">
-  <img style="margin-bottom: 60px" src="./assets/racket-logo.svg">
+  <img style="margin-bottom: 100px" src="./assets/racket-logo.svg">
 </div>
 
 <p style="line-height: 35px; margin-bottom: 20px; font-weight: 600; color: blue" size="2">
