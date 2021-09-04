@@ -17,6 +17,5 @@
   (display "Pratica 01 – Linguagem Racket") 
   (newline)
   (display "Alysson de Jesus Alcântara Alves - 01 de setembro de 2021")
-
 )
 

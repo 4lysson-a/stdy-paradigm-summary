@@ -2,7 +2,7 @@
 ;; Prof. Ausberto S. Castro Vera       (ascv@uenf.br)
 ;; UENF-CCT-LCMAT - Curso de Ciencia da Computacao
 ;; Setembro - 2021 
-;; Aluno: Fulano      <===========  seu nome aqui e abaixo
+;; Aluno: Alysson de Jesus Alcantara Alves  
 ;;
 #lang racket      ;; define a linguagem default
 ; ------------------------------------------------
@@ -10,7 +10,7 @@
 (newline)
 (display "  Paradigmas de Linguagens de Programação (Prof. Ausberto Castro)")
 (newline)
-(display "  Aluno:  Fulano ")
+(display "  Aluno:  Alysson de Jesus Alcantara Alves ")
 (newline)
 ;;
 ;;
@@ -44,6 +44,13 @@
   )
  )
 
+(define prestacao
+  (lambda (valor taxa tempo)
+    (+ (* (* valor (/ taxa 100)) tempo) valor)
+  )
+
+)
+
 ;;-------- executando ... ----------------------------
 ;;----------------------------------------------------
 
@@ -76,5 +83,6 @@
 (display "P(x) = X^2 + 3X - 7   entao P(2) = ")
 (polinomio 2)
 
-
-
+(display "Prestação com valor de R$: 1000,00 ")
+(display "taxa de 2% e tempo de 1h = ")
+(prestacao 1000 2 60)
