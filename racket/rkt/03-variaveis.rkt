@@ -12,7 +12,7 @@
 (newline)
 (display "  Paradigmas de Linguagens de Programação (Prof. Ausberto Castro)")
 (newline)
-(display "  Aluno:  Fulano ")
+(display "  Aluno:  Alysson de Jesus Alcantara Alves  ")
 (newline)
 ;;
 ;;
