@@ -2,7 +2,7 @@
 ;; Prof. Ausberto S. Castro Vera       (ascv@uenf.br)
 ;; UENF-CCT-LCMAT - Curso de Ciencia da Computacao
 ;; 2021
-;; Aluno: Fulano      <===========  escreva seu nome aqui
+;; Aluno: Alysson de Jesus Alcantara Alves      
 ;;
 #lang racket      ;; define a linguagem default
 ;; define a linguagem default: R5RS
@@ -11,7 +11,7 @@
 (newline)
 (display "  Paradigmas de Linguagens de Programação (Prof. Ausberto Castro")
 (newline)
-(display "  Aluno:  Fulano ")
+(display "  Aluno:  Alysson de Jesus Alcantara Alves ")
 (newline)
 ;;
 ;;

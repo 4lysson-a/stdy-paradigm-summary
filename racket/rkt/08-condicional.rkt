@@ -2,7 +2,7 @@
 ;; Prof. Ausberto S. Castro Vera       (ascv@uenf.br)
 ;; UENF-CCT-LCMAT - Curso de Ciencia da Computacao
 ;; Abril 2019
-;; Aluno: Fulano      <===========  escreva seu nome aqui
+;; Aluno: Alysson de Jesus Alcantara Alves  
 ;;
 #lang racket      ;; define a linguagem default
 ; ------------------------------------------------
@@ -10,7 +10,7 @@
 (newline)
 (display "  Paradigmas de Linguagens de Programação (Prof. Ausberto Castro)")
 (newline)
-(display "  Aluno:  Fulano ")
+(display "  Aluno:  Alysson de Jesus Alcantara Alves ")
 (newline)
 ;;
 ;;
@@ -28,6 +28,18 @@
 
 ;;---------------------------------------------
 
+(define (desconto quantidade) 
+     (cond 
+              ((<= quantidade 100) 0.010) 
+              ((<= quantidade 200) 0.025) 
+              ((<= quantidade 300) 0.030)
+              ((<= quantidade 500) 0.050)
+              ((<= quantidade 600) 0.060)
+              (else 1)  
+              )
+  ) 
+
+
 (newline)
 (display "Taxa para R$4.000,00 = ")
 (taxa 4000)
@@ -39,3 +51,6 @@
 (newline)
 (display "Taxa para R$15.500,00 = ")
 (taxa 15500)
+
+(display "desconto para R$: 300,00 = ")
+(desconto 360)

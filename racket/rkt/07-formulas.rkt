@@ -2,7 +2,7 @@
 ;; Prof. Ausberto S. Castro Vera       (ascv@uenf.br)
 ;; UENF-CCT-LCMAT - Curso de Ciencia da Computacao
 ;; Setembro - 2021
-;; Aluno: Fulano      <===========  escreva seu nome aqui
+;; Aluno: Alysson de Jesus Alcantara Alves
 ;;
 #lang racket      ;; define a linguagem default
 ; ------------------------------------------------
@@ -10,7 +10,7 @@
 (newline)
 (display "  Paradigmas de Linguagens de Programação (Prof. Ausberto Castro)")
 (newline)
-(display "  Aluno:  Fulano ")
+(display "  Aluno:  Alysson de Jesus Alcantara Alves ")
 (newline)
 ;;
 ;;Algumas formulas conhecidas
@@ -41,6 +41,10 @@
   )
 )
 
+; Realiza a fatorial através de um loop for
+(define (fatorial_loop n)
+  (for/product ([i (in-range 1 (add1 n))])
+    i))
  
 (newline)
 (display "Pitagoras de 3 e 4 = ")
@@ -58,5 +62,10 @@
 (display "Factorial de 5 = ")
 (factorial 5)
 (newline)
-(display " Fazer outro teste sobre Pitagoras e outro sobre Fatorial")
+(display "Fazer outro teste sobre Pitagoras e outro sobre Fatorial")
+
 (newline)
+(newline)
+
+(display "fatorial usando for loop N = 0: ")
+(fatorial_loop 0)

@@ -2,7 +2,7 @@
 ;; Prof. Ausberto S. Castro Vera       (ascv@uenf.br)
 ;; UENF-CCT-LCMAT - Curso de Ciencia da Computacao
 ;; Setembro - 2021
-;; Aluno: Fulano      <===========  escreva seu nome aqui
+;; Aluno: Alysson de Jesus Alcantara Alves   
 
 ;;;;;;;;;;;;;;;;   Escolha a linguagem R5RS
 ;;
@@ -14,7 +14,7 @@
 (newline)
 (display "  Paradigmas de Linguagens de Programação (Prof. Ausberto Castro)")
 (newline)
-(display "  Aluno:  Fulano ")
+(display "  Aluno:  Alysson de Jesus Alcantara Alves ")
 (newline)
 ;;
 ;;
@@ -51,6 +51,21 @@ P
 
 ;;----------------------------
 
+(define (escola_sistema p1 p2 p3)
+  (if (<= 6 (/ (+ (+ p1 p2) p3) 3))
+      (display "aprovado")
+      (display "reprovado")
+  )
+)
+
+
+(define (maior_que num1 num2)
+  (if (> num1 num2)
+      (display "maior")
+      (display "menor")
+  )
+)
+
 (display "MinQadrado de 6 e 9 = ") (minquadrado 6 9)
 (newline)
 
@@ -60,3 +75,13 @@ P
 (display "Vai chover na madrugada? ")
 (reply "Vai chover na madrugada?")
 
+(newline)
+(newline)
+
+(display "Notas: p1 = 5, p2 = 5, p3 = 5; situação: ")
+(escola_sistema 5 5 5)
+
+(newline)
+
+(display "Número 10 é maior ou menor que 5: ")
+(maior_que 10 5)
