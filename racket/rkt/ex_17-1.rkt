@@ -1,6 +1,6 @@
 ;; The first three lines of this file were inserted by DrRacket. They record metadata
 ;; about the language level of this file in a form that our tools can easily process.
-#reader(lib "htdp-advanced-reader.ss" "lang")((modname 20-estruturas) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #t #t none #f () #f)))
+#reader(lib "htdp-advanced-reader.ss" "lang")((modname ex_17-1) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #t #t none #f () #f)))
 ;; Introdução à Linguagem Scheme-Racket
 ;; Prof. Ausberto S. Castro Vera       (ascv@uenf.br)
 ;; UENF-CCT-LCMAT - Curso de Ciencia da Computacao
@@ -20,21 +20,6 @@
 ;   Language -> Choose Language -> How to Design Programs -> Advanced Student
 ;----------------------------------------------------------------------------
 
-;;
-(define-struct entrada (nome cep fone))
-
-(newline)  
-(make-entrada 'PedroSilva '05890-001 '606-7771)
-(newline)
-(display "Nome = " )
-(entrada-nome (make-entrada 'PedroSilva '05890-001 '606-7771))
-(display "CEP = " )
-(entrada-cep (make-entrada 'PedroSilva '05890-001 '606-7771))
-;;
-;;
-(define abc (make-entrada 'PedroSilva '05890-001 '606-7771))
-(display "Fone = " )
-(entrada-fone abc)
 
 (define-struct temperatura (C F K))
 
@@ -47,3 +32,29 @@
 (temperatura-F (make-temperatura '100 '212 '373.15))
 (display "K = " )
 (temperatura-K (make-temperatura '100 '212 '373.15))
+
+
+(define-struct rua (Endereco CEP Numero))
+
+(newline)  
+(make-rua 'Jão '1000 '10)
+(newline)
+(display "Endereco = " )
+(rua-Endereco (make-rua 'Jão  '1000 '10))
+(display "CEP = " )
+(rua-CEP (make-rua 'Jão '1000 '10))
+(display "Numero = " )
+(rua-Numero (make-rua 'Jão  '1000 '10))
+
+
+(define-struct escola (aluno nota situacao))
+
+(newline)  
+(make-escola 'Jão '6 'aprovado)
+(newline)
+(display "aluno = " )
+(escola-aluno (make-escola 'Jão  '6 'aprovado))
+(display "nota = " )
+(escola-nota (make-escola 'Jão '6 'aprovado))
+(display "situacao = " )
+(escola-situacao (make-escola 'Jão  '6 'aprovado))

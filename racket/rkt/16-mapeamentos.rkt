@@ -2,7 +2,7 @@
 ;; Prof. Ausberto S. Castro Vera       (ascv@uenf.br)
 ;; UENF-CCT-LCMAT - Curso de Ciencia da Computacao
 ;; Setembro - 2021
-;; Aluno: Alysson de Jesus Alcantara Alves      <===========  seu nome aqui e abaixo
+;; Aluno: Alysson de Jesus Alcantara Alves  
 ;;
 #lang racket      ;; define a linguagem default
 ; ------------------------------------------------
@@ -12,6 +12,8 @@
 (newline)
 (display "  Aluno:  Alysson de Jesus Alcantara Alves ")
 (newline)
+(newline)
+
 ;;
 ;;
 ;; Mapeamentos
@@ -37,15 +39,19 @@
 
 (define Lista (list  1 4 9 16 25))
 (display "Lista:  ") Lista
-(display "Raiz Lista:  ") (map sqrt Lista) 
+(display "Raiz Lista:  ") (map sqrt Lista)
+
 ;;
 ;;
+
 (newline)
 (define dados '(2 5 6 23))
 (newline)
 (display "Dados:  ") dados
 (newline)
+
 ;;mapeamentos 
+
 (display "Mapeamentos: Dados-Proximo  ") (newline)
 (map proximo dados)
 

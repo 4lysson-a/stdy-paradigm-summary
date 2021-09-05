@@ -5,20 +5,19 @@
 ;; Prof. Ausberto S. Castro Vera       (ascv@uenf.br)
 ;; UENF-CCT-LCMAT - Curso de Ciencia da Computacao
 ;; 2021
-;; Aluno: Alysson de Jesus Alcantara Alves      <===========  escreva seu nome aqui
+;; Aluno: Fulano      <===========  escreva seu nome aqui
 ;;
 ;;;;;;;;;;;;;;;;   Escolha a linguagem "Determine language from source"
 ;;
 
 ; ------------------------------------------------
-
 (display "    UENF-CCT-LCMAT-CC, 2021")
 (newline)
 (display "    Paradigmas de Linguagens de Programação (Prof. Ausberto Castro)")
 (newline)
-(display "    Aluno:  Alysson de Jesus Alcantara Alves ")
+(display "    Aluno:  Fulano ")
 (newline)
-
+;;
 ;;
 ;; Numeros e aritmetica
 ;; ---------------------------------------------------

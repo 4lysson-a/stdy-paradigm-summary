@@ -5,12 +5,11 @@
 ;; Prof. Ausberto S. Castro Vera       (ascv@uenf.br)
 ;; UENF-CCT-LCMAT - Curso de Ciencia da Computacao
 ;; 2021
-;; Aluno: Alysson de Jesus Alcântara Alves
+;; Aluno: Alysson de Jesus Alcantara Alves
 ;; 
 ;; Liguagem Advanced Student       ;; define a linguagem default
 ;; O primeiro programa Racket
 ;; ---------------------------------------------------
-
 (begin
   (newline)
   (display "Bom dia, UENF. Bemvindo à Linguagem Racket-Scheme! 2021")
@@ -18,6 +17,5 @@
   (display "Pratica 01 – Linguagem Racket") 
   (newline)
   (display "Alysson de Jesus Alcântara Alves - 01 de setembro de 2021")
-
 )
 

@@ -5,7 +5,7 @@
 ;; Prof. Ausberto S. Castro Vera       (ascv@uenf.br)
 ;; UENF-CCT-LCMAT - Curso de Ciencia da Computacao
 ;; Setembro - 2021 
-;; Aluno: Alysson de Jesus Alcantara Alves      <===========  seu nome aqui e abaixo
+;; Aluno: Alysson de Jesus Alcantara Alves 
 ;;
   ;; define a linguagem default ===> Habilite Advanced Student
 ; ------------------------------------------------
@@ -73,4 +73,37 @@
 (display "X + 1 = 0 , Raizes = ")
 (poly2grau 0 1 1) 
 (display "deberia ser: Degenerada")
+(newline)
+(newline)
+
+(newline)
+(display "TESTES")
+(newline)
+
+(newline)
+; Testes
+
+(newline)
+(display "5x² - 10x + 20 = 0 , Raizes = ")
+(poly2grau 5 -10 20) 
+(newline)
+
+(newline)
+(display "- 10x + 20 = 0 , Raizes = ")
+(poly2grau 0 -10 20) 
+(newline)
+
+(newline)
+(display "2x² - 0 + 20 = 0 , Raizes = ")
+(poly2grau 2 0 20) 
+(newline)
+
+(newline)
+(display "0 - 0 + 1 = 0 , Raizes = ")
+(poly2grau 0 0 1) 
+(newline)
+
+(newline)
+(display "-1 - 1 + 1 = 0 , Raizes = ")
+(poly2grau -1 -1 1) 
 (newline)

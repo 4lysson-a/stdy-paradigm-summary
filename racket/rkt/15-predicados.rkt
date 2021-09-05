@@ -73,6 +73,8 @@
 (display "É un STRING 24 ?:  ")(string? 24)
 
 
-
-
-
+(newline)
+(display "TESTE DE PREDICADO: char ´m = ")(string? "´m'")
+(display "TESTE DE PREDICADO: char 14 = ")(string? 14)
+(display "TESTE DE PREDICADO: char #b = ")(string? #\b)
+(display "TESTE DE PREDICADO: char #m = ")(string? #\m)
