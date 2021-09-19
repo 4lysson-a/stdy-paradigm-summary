@@ -1,0 +1,244 @@
+% Prof. Dr. Ausberto S. Castro Vera
+% UENF - CCT - LCMAT - Curso de Ci\^{e}ncia da Computa\c{c}\~{a}o
+% Campos, RJ,  2021
+% Disciplina: Paradigmas de Linguagens de Programa\c{c}\~{a}o
+% Aluno:
+
+
+\chapter{ Conceitos b\'{a}sicos da Linguagem Python}
+
+A linguagem Python é extremamente versátil e cada vez mais usada não só na academia, mas também na indústria.Fundamentalmente falando, ela tem três características básicas.
+
+Como o Python é uma linguagem interpretada, isso significa que funciona em um ambiente onde o interpretador interativo avalia cada expressão no contexto definido, com o efeito de calcular o resultado (ou mensagem de erro) e, finalmente, atualizar o contexto. Essa classificação parece ser o oposto das chamadas linguagens compiladas (como C, C ++ ou Fortran), onde o compilador analisa todo o programa e, se nenhum erro for detectado, gera um arquivo executável utilizável.
+
+    %%%%%%%%=================================
+    \section{Vari\'{a}veis e constantes}
+    %%%%%%%%=================================
+  O conceito de variáveis em Python é sempre representado por um objeto (tudo é um objeto) e cada variável é uma referência. Na maioria das linguagens de programação, quando inicializamos uma variável e atribuímos um valor a ela, ela carrega o valor alocado na memória.Quando alteramos seu valor, também alteramos o valor na memória. No entanto, em Python, as variáveis armazenam endereços de memória em vez de valores.
+
+    O Código abaixo mostra a declaração de variaveis usando Python
+
+    \begin{lstlisting}
+    >>> #criando uma variavel x
+    >>> x = [1,2,3]
+    >>> y = x
+    >>> # o método append() adiciona um elemento ao vetor x
+    >>> x.append(4)
+    >>> print(y)
+
+    [1, 2, 3, 4]
+    \end{lstlisting}    
+
+    %%%%%%%%=================================
+    \section{Tipos de Dados B\'{a}sicos}
+    %%%%%%%%=================================
+    Em Python, todo valor (objeto) pertence a um certo tipo (classe). Este tipo determina quais operações podem ser aplicadas ao valor (objeto). Portanto, é uma linguagem digitada, mas os tipos não são explícitos, o que torna o trabalho do usuário mais fácil (embora possa causar outros problemas na depuração de erros downstream). Os tipos básicos mais úteis disponíveis são: inteiro (int), número real (float) e valor lógico (bool). Os tipos básicos são imutáveis.
+    
+    
+    \begin{lstlisting}
+    >>> type(1)
+        int
+        
+    >>> type(1.1)
+        float
+        
+    >>> type('1')
+        str
+        
+    >>> type(1==1)
+        bool
+    \end{lstlisting}    
+    
+    O tipo bool disponibiliza as constantes True e False, bem como diversos operadores lógicos (AND, NOT, OR). O Python tem ainda diversos operadores de comparação que devolvem valores lógicos: <, <=, >, >=, ==, !=, is, is not, isinstance.
+    
+            \subsection{Números}
+            
+            A sintaxe de expressões do Python é usual: os operadores +, -, * e / funcionam da mesma forma que em outras linguagens tradicionais (por exemplo, Pascal ou C); parênteses (()) podem ser usados para agrupar expressões, uma divisão sempre vai retornar valores flutuantes. Por exemplo:
+
+            \begin{lstlisting}
+            >>> 1 + 2
+                3
+                
+            >>> 50 - 5*6
+                20
+                
+            >>> 8 / 5 
+                1.6
+            \end{lstlisting}    
+    
+     %%%........................
+            \subsection{String}
+     %%%........................
+           Uma string é uma sequência de caracteres é uma sequência de caracteres tratada como um único item de dados. Para Python, uma string é uma matriz de caracteres ou qualquer grupo de caracteres escritos entre aspas duplas ou simples. Por exemplo
+    
+    \begin{lstlisting}
+    >>> x = 'Python'
+    >>> print (x)  Python
+    \end{lstlisting}
+
+
+     %%%%%%%%=================================
+    \section{Estruturas de dados}
+    %%%%%%%%=================================
+        
+    Tipos de dados de coleção são junções de vários tipos de dados diferentes criando uma estrutura complexa que pode ser usada para servir em diversas ocasiões diferentes, as principais estruturas dentro do Python são Listas de dados, Sets de dados, dicionários, e Tuplas uma estrutura peculiar do Python similar a uma lista.  \\
+
+     %%%........................
+    \subsection{Tipos Sequenciais}
+     %%%........................
+            Em Python uma lista ou list é uma sequência de valores ou coleção ordenadas, onde cada valor se identifica por um índice começando a partir do 0.
+            Esses valores são chamados de elementos ou itens no python, onde cada item pode ter tipos de dados diferente \\
+            
+    \begin{lstlisting}
+     # como declarar uma lista 
+     # com tipos diferentes em python
+    
+    >>> nome_da_lista = [2, "Ola", 3.1]
+    \end{lstlisting}
+        
+
+     %%%........................
+            \subsection{Tipos Conjunto}
+     %%%........................
+            Um tipo conjunto é uma coleção de vários tipos de dados diferentes, similar a um vetor de string, porém pode receber diversos tipos de dados. Sets são uma coleção de itens desordenada, que é parcialmente imutável e não podem conter elementos duplicados. Em Python os tipos conjuntos são representados pelo tipo Sets de dados
+            Como parte de serem parcialmente imutáveis os sets possuem funções de adição e remoção de elementos
+            No exemplo abaixo, vamos declarar um set, e manipular os elementos de dentro dele
+        
+    \begin{lstlisting}
+    meu_set = {1, 2, 3, 4, 1}
+    
+    # Adicionando elementos
+    meu_set.add(2)
+    
+    # Atualizando set
+    meu_set.update([3, 4, 5, 6])
+    
+    # Removendo elemento
+    meu_set.discard(2)
+
+    \end{lstlisting}
+        
+     %%%........................
+            \subsection{Tipos Mapeamento}
+     %%%........................
+         Um mapa é uma coleção associativa desordenada. Um tipo mapeamento é composto por uma série de chaves e valores correspondentes, em Python o único tipo mapeamento nativo da linguagem é o dicionário, eles ajudam a implementar tipos de dados abstratos. No exemplo vamos criar e acessar um dict, pessoa, e atribuir a pessoa uma série de características \\
+         
+    \begin{lstlisting}
+    >>> pessoa = {
+        'nome': 'Pythonico', 
+        'altura': 1.65, 
+        'idade': 21
+        }
+    >>> print(pessoa['nome'])
+    
+    Pythonico
+    \end{lstlisting}
+
+
+    %%%%%%%%=================================
+    \section{Estrutura de Controle e Fun\c{c}\~{o}es}
+    %%%%%%%%=================================
+    As estruturas de controle servem para decidir os blocos de códigos que serão executados a partir de determinadas validações lógicas na linguagem.
+    Para o Python é importante ressaltar que dentro de estruturas de controle a indentação do código é fundamental para que não ocorra erros na estrutura
+     %%%........................
+            \subsection{O comando IF}
+     %%%........................
+    Uma instrução else pode ser combinada com uma instrução if . Uma instrução else contém o bloco de código que é executado se a expressão condicional na instrução if for resolvida para 0 ou um valor FALSE.
+
+    A instrução else é uma instrução opcional e pode haver no máximo apenas uma instrução else após if .
+
+    A sintaxe básica para a estrutura condicional if é a seguinte
+    
+\begin{lstlisting}
+if expression:
+   statement(s)
+else:
+   statement(s)
+\end{lstlisting}
+
+      %%%........................
+            \subsection{La\c{c}o FOR}
+     %%%........................
+        Estruturas de repetição são extremamente uteis em varias situações, elas fazem com que um bloco de códigos seja executado por varias vezes, ate que uma condição se satisfaça, uma das mais utilizadas no Python e na programação em geral, é o FOR loop, o for assim como outros loops como while, também executa um bloco de código ate que determinada condição se satisfaça, porém com a vantagem de que não precisamos declarar uma variavel de contador para incrementar dentro do for, o que torna a escria mais simples e prática
+        
+        A sintaxe do for é bem simples, ela começa com a chamada do loop for, em seguida a variavel que iremos iterar pelo loop, e por fim a condição final ate onde o loop vai, mostro com mais detalhes nos exemplos abaixo: 
+
+\begin{lstlisting}
+cidades = ['Rio de Janeiro', 'Curitiba', 'Salvador']
+
+for cidade in cidades:
+    print(cidade)
+print("fim do for loop")
+
+>>> Rio de Janeiro
+>>> Curitiba
+>>> Salvador
+>>> fim do for loop
+
+\end{lstlisting}
+
+Pode parecer um pouco confuso, principalmente para quem vem de for's tradicionais como no caso da linguagem c, mas basicamente o que o Python quer dizer é que estamos usando uma variavel de iteração chamada cidade, onde cidade representa cada um dos items no array de cidades que declaramos acima, no python o for sabe exatamente quando parar, ele para assim que cidade percorre todos os elementos de cidades.
+
+Mas e quando precisamos dizer com mais especificidade quando queremos que um loop acaba em Python ? \\
+Para isso usamos os while loops, explicarei eles em seguida
+        
+     %%%........................
+            \subsection{La\c{c}o WHILE}
+     %%%........................
+        Nos loops while, diferente do for, nós precisamos de uma condição para que aquele loop exista, e ele existira enquanto aquela condição for verdadeira. No exemplo vamos utilizar uma variavel nome que, enquanto ela for verdadeira o loop for ira existir
+        
+\begin{lstlisting}
+nome = input('insira seu nome: ')
+
+while nome:
+    input('insira um nome: ')
+
+>>> insira um nome: Luiz
+>>> insira um nome: Larissa
+>>> insira um nome: Lara
+>>> insira um nome: Lucas
+>>> ........
+
+\end{lstlisting}     
+
+No exemplo acabamos gerando um loop infinito dentro do while, um detalhe que se deve tomar muito cuidado, como a variavel nome, sempre sera entendida como válida pelo Python, o while nunca vai deixar de executar, gerando um loop infinito e comportamentos indesejados, por isso é preciso tomar cuidado ao usar while loop's
+
+    %%%%%%%%======================
+    \section{M\'{o}dulos e pacotes}
+    %%%%%%%%======================
+    Trabalhar com módulos e pacotes, é algo fundamental para todo desenvolvedor Python, além de ser uma atividade bem commum durante o desenvolvimento, mas antes precisamos entender que para o Python, todos os scripts são entendidos como um módulo, e que um pacote, é basicamente um conjunto de módulos, ou seja, um conjunto de script's python
+    
+
+
+       %%%........................
+            \subsection{M\'{o}dulos}
+     %%%........................
+            Todo script de Python é entendido como um módulo, como diz a própria documentação oficial do Python.
+            
+\begin{quote}
+ "Um módulo é um arquivo Python contendo definições e instruções. O nome do arquivo é o módulo com o sufixo .py adicionado. Dentro de um módulo, o nome do módulo (como uma string) está disponível na variável global" 
+ 
+\begin{lstlisting}
+    __name__
+\end{lstlisting}
+\end{quote}
+    
+    É importante lembrar que módulos podem possuir outros módulos importados dentro deles 
+
+          %%%........................
+            \subsection{Pacotes}
+            
+            Em dado momento, vamos começar a ter uma aplicação em Python com muitos módulos para serem gerenciados ao mesmo tempo, isso pode ocasionar além de conflitos de arquivos uma confusão para os desenvolvedores se encontrarem, por isso Python tem um recurso de pacotes, onde você pode empacotar uma série de módulos dentro de um único pacote, e pode utilizar o pacote em outros arquivos python, assim variáveis e arquivos que possuem nome similares não darão mais conflitos com o python, além de ficar tudo bem organizado para os desenvolvedores
+     %%%........................
+
+
+
+
+
+
+
+
+
+
+
+
