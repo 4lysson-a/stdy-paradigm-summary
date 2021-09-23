@@ -51,6 +51,12 @@ limita_com(peru,equador)
 %  REGRAS
 %
 % Viagem_nacional(X ,Y):-
+
+rota(X,Y):- esta_em(X,Z),esta_em(Z,W),esta_em(W,V),esta_em(V,Y).
+
+
 % Viagem_internacional(PaisA,PaisB) :-
+
+rota_internacional(PaisA, PaisB):- esta_em(PaisA,Z),esta_em(Z,W),esta_em(W,V),esta_em(V,Y),esta_em(Y,PaisB).
 
 
