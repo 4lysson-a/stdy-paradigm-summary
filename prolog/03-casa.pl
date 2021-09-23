@@ -96,17 +96,26 @@ goto(Lugar):- posso_ir(Lugar), mover(Lugar), observar.
 estou(Lugar):- estamos_em(Lugar),
             write('Voce esta na '), write(Lugar), nl,
             write('Voce pode ver:'), nl,
-            lista_coisas(Lugar),
+            lista_coisas(Lugar), nl,
             write('Voce pode ir para:'), nl,
-            lista_portas(Lugar), 
+            lista_portas(Lugar), nl,
             write('você pode comer '),
             nl.
 
 pode_comer(cozinha):-
-                localizacao(X, cozinha), nl,
-                write(comestivel(X)).
+            localizacao(X, cozinha), nl,
+            write(comestivel(X)).
 
+objeto(X,Y) :-  
+            conectar(Y,cozinha),
+            localizacao(X,Y),
+            nl,
+            write(X),
+            nl.
 
-
-
-
+objeto_em(X,Y,Lugar) :-  
+            conectar(Y,Lugar),
+            localizacao(X,Y),
+            nl,
+            write(X),
+            nl.
