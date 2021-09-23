@@ -17,11 +17,25 @@ lugar('sala de jantar').
 lugar(celeiro).
 lugar(jardim).
 
+lugar(quarto).
+lugar(quadra).
+lugar(banheiro).
+
+porta(quarto, banheiro).
+porta(quadra, banheiro).
+porta(cozinha, banheiro).
+porta(escritorio, quarto).
+porta(cozinha, quadra).
+
 porta(escritorio, corredor).
 porta(cozinha, escritorio).
 porta(corredor, 'sala de jantar').
 porta(cozinha, celeiro).
 porta('sala de jantar', cozinha).
+
+localizacao(bola, quadra).
+localizacao(cama, quarto).
+localizacao(chuveiro, banheiro).
 
 localizacao(escrivaninha, escritorio).
 localizacao(laranja, cozinha).
@@ -72,13 +86,25 @@ observar :- estamos_em(Lugar),
             write('Voce pode ir para:'), nl,
             lista_portas(Lugar).
 
-  
 mover(Lugar):- retract(estamos_em(X)), asserta(estamos_em(Lugar)).
 
 posso_ir(Lugar):- estamos_em(X), conectar(X, Lugar).
 posso_ir(Lugar):- write('Voce nao pode ir de aqui para '), write(Lugar), nl, fail.
 
 goto(Lugar):- posso_ir(Lugar), mover(Lugar), observar.
+
+estou(Lugar):- estamos_em(Lugar),
+            write('Voce esta na '), write(Lugar), nl,
+            write('Voce pode ver:'), nl,
+            lista_coisas(Lugar),
+            write('Voce pode ir para:'), nl,
+            lista_portas(Lugar), 
+            write('você pode comer '),
+            nl.
+
+pode_comer(cozinha):-
+                localizacao(X, cozinha), nl,
+                write(comestivel(X)).
 
 
 

@@ -1,5 +1,7 @@
 #!/bin/bash   
+
 clear
+
 swipl -o output -c $1
 
 clear
@@ -7,3 +9,5 @@ clear
 ./output
 
 rm output
+
+clear
