@@ -12,27 +12,56 @@
    %%%%%%%%======================
     \section{Classes e Objetos}
     %%%%%%%%======================
-
+    
+    A programação orientada a objetos teve sua origem por volta dos anos 60, mas foi somente em meados dos anos 80 que ela veio a se tornar um dos principais paradigmas da programação, o objetivo era se criar um paradigma onde os programadores podem representar objetos complexos do mundo real, dentro da computação  \newline
+    
+    Python é uma linguagem onde tudo é representado através de objetos, o que facilita em alguns pontos.
+    No Exemplo abaixo vamos construir uma classe para representar um Ponto no plano cartesiano, vamos considerar que esse ponto P, possui dois eixos, o eixo x, e o y. Para representar isso vamos usar classes e métodos e o conceito de orientação a objeto
 
    \begin{lstlisting}
-    class NomeClasse:
+    class Ponto:
+    """ A classe Ponto representa um ponto no plano. """
 
-    def metodo1:
-
-    def Metodo2:
-
+    def __init__(self):
+        """ Criando um novo ponto a partir da origem """
+        self.x = 4
+        self.y = 0
+    
+    
+    p1 = Ponto
+    print(p1.x) # retorno 4
     \end{lstlisting}
-
+    Vamos analisar a nossa classe acima \newline
+    Na primeira linha, estamos definindo o nome da classe, Ponto.
+    Logo abaixo usamos um método especial do python o init, ele é um método de inicialização do python, também chamado de construtor, ele é iniciado sempre que uma nova instancia de Ponto é definida, e da ao programador a possibilidade de configurar os atributos dessa classe
+    Por fim, criamos uma instancia desse objeto usando a variável p1, logo p1 representa nossa classe Ponto.
+    
    %%%%%%%%======================
     \section{Operadores ou M\'{e}todos}
     %%%%%%%%======================
-
+    No exemplo acima utilizamos alguns métodos dentro da classe Ponto, vou explicar melhor o que eles são para o python abaixo \newline
+    Um método em python é um tipo de referencia a atributos de instancias para orientação a objetos, basicamente um método é um função que "pertence" a um objeto, é importante lembrar que os métodos em python não são exclusivos de classes definidas pelo usuário, eles estão presente em praticamente toda classe que vem nativa da linguagem como por exemplo os métodos append, insert e remove de uma lista.
 
    %%%%%%%%======================
     \section{Heran\c{c}a}
     %%%%%%%%======================
-
-
-   %%%%%%%%======================
-    \section{Estudo de Caso: }
-    %%%%%%%%====================== 
+    Em orientação a objetos uma herança é uma forma de se estender uma classe, um exemplo de como ela funciona, vamos supor que queremos representar vários carros diferentes, uma possível abordagem seria criar uma classe para cada carro, porém isso pode dar um certo trabalho desnecessário, pois embora tenhamos carros diferentes, eles ainda vão ter algumas características em comum. Logo uma forma mais elegante de se representar esses carros é através das heranças, onde armazenamos essas informações que são comums para todos os carros.
+    
+    \begin{lstlisting}
+    class Veiculo:
+        def __init__(self, marca, modelo, ano):
+            self.marca = marca
+            self.modelo = modelo
+            self.ano = ano
+    \end{lstlisting}
+    
+    No exemplo acima representamos a nossa classe veiculo, que corresponde a um veiculo genérico, agora vamos estende-la de modo a representar uma motocicleta
+    
+    \begin{lstlisting}
+    class Motocicleta:
+        def __init__(self, marca, modelo, ano, cilindrada):
+            super().__init__(marca, modelo, ano)
+            self.cilindrada = cilindrada
+    \end{lstlisting}
+    
+    No exemplo acima, a nossa classe Motocicleta, herda todos os atributos de um Veiculo, porém ela possui o seu próprio, o cilindrada, que acrescenta os atributos da classe Veiculo
