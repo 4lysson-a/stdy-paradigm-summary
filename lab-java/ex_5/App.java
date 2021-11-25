@@ -1,5 +1,6 @@
-
+// Alysson A.
 // Escreva um programa JAVA que calcule a média de quatro notas. O programa deve mostrar o valor da média e indicar se foi aprovado ou reprovado
+
 import java.util.Scanner;
 
 public class App {
