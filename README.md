@@ -1,5 +1,5 @@
 > [!WARNING]  
-> This is an old project for educational purposes only. Code examples may not follow best practices for production environments.
+> 👷 This is an old project for educational purposes only. Code examples may not follow best practices for production environments.
 
 # 🕵️‍♂️ Study Paradigm Summary 🕵️‍♀️
 
