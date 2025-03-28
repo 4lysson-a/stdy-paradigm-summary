@@ -1,14 +1,12 @@
-# Exercício 1 de paradigmas de programação 
+# Programming Paradigms Exercise 1
 
-Escrever um programa que resolva a soma entre dois números inseridos pelo usuário
-- usuário deve digitar dois números 
-- programa deve retornar a soma entre eles 
+Write a program that calculates the sum of two numbers entered by the user.  
+- The user must input two numbers.  
+- The program should return the sum of these numbers.  
 
+## Below are screenshots of some test runs of the program  
 
-## Abaixo os prints com alguns testes do programa 
-
-![teste](./assets/teste-1.png)
-![teste](./assets/teste-2.png)
-![teste](./assets/teste-3.png)
-![teste](./assets/teste-4.png)
-
+![test](./assets/test-1.png)
+![test](./assets/test-2.png)
+![test](./assets/test-3.png)
+![test](./assets/test-4.png)

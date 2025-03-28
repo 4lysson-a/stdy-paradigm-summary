@@ -1,3 +1,6 @@
+> [!WARNING]  
+> This is an old project for educational purposes only. Code examples may not follow best practices for production environments.
+
 # 🕵️‍♂️ Study Paradigm Summary 🕵️‍♀️
 
 *"When you have eliminated the impossible, whatever remains, however improbable, must be the paradigm."*
@@ -5,8 +8,6 @@
 
 Welcome to **Study-Paradigm-Summary**! This repository is a detective-like investigation into different **programming paradigms** across various languages. Just as Sherlock Holmes solved mysteries, here we explore the unique characteristics of each language and how they approach problem-solving.
 
-
-> 🇧🇷 **Portuguese version available**: [README-ptBR.md](README-ptBR.md)
 
 ---
 

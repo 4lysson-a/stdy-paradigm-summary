@@ -1,28 +1,28 @@
-program Notas_e_media
+program Grades_and_Average
 implicit none
-real notas(10), nota, soma, media
-intenger i 
-soma = 0
+real grades(10), grade, sum, average
+integer i 
+sum = 0
 do 100 i = 1, 10
-    write(*,50) 'Introduza a ', i, 'a. nota: '
-    read(,)nota
-    soma = soma + nota
-    notas(i) = nota
+    write(*,50) 'Enter the ', i, 'th grade: '
+    read(,)grade
+    sum = sum + grade
+    grades(i) = grade
 continue
 
-media = soma / 10
-write(*,60)'Média da turma: ', media
+average = sum / 10
+write(*,60)'Class average: ', average
 
-write(*,70)'Notas acima da média:'
+write(*,70)'Grades above average:'
 do 200 i = 1, 10
-    if  (notas(i) > media) then
-        write(*,80) notas(i)
+    if  (grades(i) > average) then
+        write(*,80) grades(i)
     endif 
 continue
 
 stop
-format(a,i2.1,a, $)
-format(/,a,f4.1)
-format(/,a,/)
-format(f4.1)
+50 format(a,i2.1,a, $)
+60 format(/,a,f4.1)
+70 format(/,a,/)
+80 format(f4.1)
 end

@@ -18,8 +18,8 @@ void clear_screen(){
 
 void menu()
 {
-	printf(" -- Fim da execução -- \n");
-	printf("\n1 - continuar\n0 - sair\n\n| ");
+	printf(" -- End of execution -- \n");
+	printf("\n1 - continue\n0 - exit\n\n| ");
 	scanf("%d", &loop);
 	clear_screen();
 }
@@ -30,11 +30,11 @@ int main()
 	setlocale(LC_ALL, "portuguese");
 	do
 	{
-		printf("\nDigite um número para ser somado: ");
+		printf("\nEnter a number to be added: ");
 		scanf("%f", &number[0]);
-		printf("Digite o próximo número: ");
+		printf("Enter the next number: ");
 		scanf("%f", &number[1]);
-		printf("\n\nA soma dos dois números é: %.3f\n\n\n\n", number[0] + number[1]);
+		printf("\n\nnThe sum of the two numbers is: %.3f\n\n\n\n", number[0] + number[1]);
 		menu();
 	} while (loop >= 1);
 }
