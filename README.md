@@ -26,7 +26,7 @@ Now, let's examine the languages in this study!
 
 ---
 
-## 🐍 [**Python**](https://github.com/4lysson-a/stdy-paradigm-summary/tree/master/python)
+## 🐍 [**Python**](https://github.com/4lysson-a/stdy-paradigm-summary/tree/master/lab/python)
 **Paradigms:** *Multi-paradigm (Object-Oriented, Imperative, Functional, Procedural)*
 Python is versatile! It supports everything from simple scripts to complex systems with inheritance and polymorphism (OOP). It also enables functional programming with `map`, `filter`, and `lambdas`.
 
