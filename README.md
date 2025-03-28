@@ -68,7 +68,7 @@ The veteran Fortran pioneered scientific computing. It focuses on mathematical o
 ---
 
 ## 🎩 **How to Use This Repository?**
-Each language has its own folder with code examples highlighting its paradigms. Feel free to explore, contribute, or unravel new programming mysteries!
+Each language has its own folder with code examples highlighting its paradigms. Feel free to explore, new programming mysteries!
 
 > *"The game is afoot!"*
 
