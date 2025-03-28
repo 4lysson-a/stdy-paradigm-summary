@@ -5,6 +5,7 @@
 
 Welcome to **Study-Paradigm-Summary**! This repository is a detective-like investigation into different **programming paradigms** across various languages. Just as Sherlock Holmes solved mysteries, here we explore the unique characteristics of each language and how they approach problem-solving.
 
+
 > 🇧🇷 **Portuguese version available**: [README-ptBR.md](README-ptBR.md)
 
 ---
@@ -25,43 +26,43 @@ Now, let's examine the languages in this study!
 
 ---
 
-## 🐍 **Python**
+## 🐍 [**Python**](https://github.com/4lysson-a/stdy-paradigm-summary/tree/master/python)
 **Paradigms:** *Multi-paradigm (Object-Oriented, Imperative, Functional, Procedural)*
 Python is versatile! It supports everything from simple scripts to complex systems with inheritance and polymorphism (OOP). It also enables functional programming with `map`, `filter`, and `lambdas`.
 
 ---
 
-## ☕ **Java**
+## ☕ [**Java**](https://github.com/4lysson-a/stdy-paradigm-summary/tree/master/lab/java)
 **Paradigms:** *Object-Oriented (strongly typed), Imperative*
 Java is the methodical detective: everything is a class, and inheritance is essential. It has limited functional programming support (with `Streams` and `Lambdas` since Java 8).
 
 ---
 
-## 🧠 **Prolog**
+## 🧠 [**Prolog**](https://github.com/4lysson-a/stdy-paradigm-summary/tree/master/lab/prolog)
 **Paradigms:** *Logic (Declarative)*
 Prolog is the Sherlock Holmes of languages! You define **facts** and **rules**, and the language infers solutions through **unification** and **backtracking**.
 
 ---
 
-## 🎻 **Racket**
+## 🎻 [**Racket**](https://github.com/4lysson-a/stdy-paradigm-summary/tree/master/lab/racket)
 **Paradigms:** *Functional (LISP-like), Multi-paradigm*
 Racket is a Scheme dialect (LISP family) where functions are first-class citizens. It supports **macros**, **pure functional programming**, and even **OOP** with object systems.
 
 ---
 
-## 📊 **Scilab**
+## 📊 [**Scilab**](https://github.com/4lysson-a/stdy-paradigm-summary/tree/master/lab/scilab)
 **Paradigms:** *Procedural, Numerical (similar to MATLAB)*
 Focused on scientific computing, Scilab works with matrices and mathematical functions procedurally, ideal for calculations and simulations.
 
 ---
 
-## 🖥️ **C**
+## 🖥️ [**C**](https://github.com/4lysson-a/stdy-paradigm-summary/tree/master/lab/c)
 **Paradigms:** *Imperative, Procedural*
 C is the classic detective: low-level, efficient, and function-structured. It has no native OOP but allows direct memory manipulation.
 
 ---
 
-## 🏛️ **Fortran**
+## 🏛️ [**Fortran**](https://github.com/4lysson-a/stdy-paradigm-summary/tree/master/lab/fortran)
 **Paradigms:** *Imperative, Procedural, Numerical*
 The veteran Fortran pioneered scientific computing. It focuses on mathematical operations and arrays, still used in simulations and engineering.
 
